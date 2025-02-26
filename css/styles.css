@@ -1,10 +1,10 @@
 /* estilo del body*/
 body {
-    
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: white; /* Asegura que el texto sea legible */
+  font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #121212;
     color: white;
     text-align: center;
   }
@@ -103,3 +103,37 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
+
+    .horarios {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .horarios span {
+        background: #f4a261;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+.redsocial img:hover{
+  transform: scale(1.04);
+  
+}
+.redsocial img{
+  border-radius: 75%;
+  width: 50px;height: 50px;
+  margin-right: 40px;
+}
+.redsocial {
+  margin-left: 950px;
+}
+
+  
+
+
+
+  
+
+  
+

@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos </title>
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/Contactanos.css">
+
 </head>
+
 <body>
     <header>
+        <!--Aqui creamos la barra de navegacion para ir de un html a otro-->
         <nav class="navbar">
             <div class="logo">CinePlus</div>
             <ul class="nav-links">
@@ -18,6 +22,65 @@
             </ul>
         </nav>
     </header>
+    <!--En esta seccion agregamos un formulario para que el usuario envie un correo al gmail designado -->
+
+    <section class="contacto">
+        <a href="https://web.whatsapp.com/" class="contacto1">Contactanos</a>
+        <form action="https://formspree.io/f/correoasignado@gmail.com" method="POST">
+            <br>
+            <br>
+            <!--Cuadro para ingresar nombre-->
+            <label for="nombre">Nombre:</label>
+            <br>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <!--Cuadro para ingresar datos de telefono-->
+            <label for="Telefono">Telefono:</label>
+            <br>
+            <input type="text" id="telefono" name="telefono" required>
+            <br>
+            <!--Cuadro para ingresar datos de identificacion-->
+            <label for="Identificacion">Identificacion:</label>
+            <br>
+            <input type="text" id="identificacion" name="identificacion" required>
+            <br>
+            <!--cuadro para seleccionar fecha de nacimiento-->
+            <label for="fecha">Fecha de nacimiento:</label>
+            <br>
+            <input type="date" id="fechanac" name="fechanac" required>
+            <br>
+            <!--cuadro para seleccionar genero-->
+            <label for="genero">Género:</label>
+            <br>
+            <select id="genero" name="genero">
+              <option value="M">M</option>
+              <option value="F">F</option>
+            </select>
+            <br>
+            <!--cuadro para ingresar correo electronico-->
+            <label for="email">Correo Electrónico:</label>
+            <br>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
+            <!--cuadro para ingresar mensaje-->
+            <label for="mensaje">Mensaje:</label>
+            <br>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            <br>
+            <!--boton para enviar datos-->
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    <footer>
+        <!-- En este footer incluimos las redes sociales con un link hacia dicha red social-->
+        <div class="redsocial">
+            <h3>Siguenos</h3>
+            <a href="https://www.facebook.com/"><img src="../images/redsocial/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/"><img src="../images/redsocial/instagram.jpeg" alt=""></a>
+            <a href="https://x.com/"><img src="../images/redsocial/twitter3.png" alt=""></a>
+        </div>
+    </footer>
 </body>
 
 </html>
